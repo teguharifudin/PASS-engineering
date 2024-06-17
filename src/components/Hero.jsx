@@ -14,9 +14,6 @@ const Hero = () => {
             <br className="md:block hidden " /> engineering{" "}
           </h1>
         </div>
-        <p className="text-base sm:text-lg md:text-xl text-dimWhite sm:mt-5 md:max-w-[470px]">
-        Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque vitae efficitur ipsum. Vivamus commodo massa eu mi aliquet dictum. Duis porttitor odio eget iaculis blandit. In lacus est, ultrices sit amet laoreet ac, blandit eget erat. Nulla vitae laoreet massa.
-        </p>
       </div>
       <div className="flex-1 relative flex items-center justify-center">
         <img src={jaya} alt="robot" className="md:w-full md:h-full" />

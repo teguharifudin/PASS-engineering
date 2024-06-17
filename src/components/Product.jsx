@@ -2,14 +2,19 @@ import fwh from "../assets/fuel-water-hybrid.png";
 import hidrogen from "../assets/hidrogen-pasta.png";
 import hidrofit from "../assets/hidrofit.png";
 import mesin from "../assets/mesin-pompa.png";
-import { FaStar } from "react-icons/fa";
+import { GiAerialSignal } from "react-icons/gi";
+import { FaWalkieTalkie, FaArrowUpFromWaterPump } from "react-icons/fa6";
+import { SiOpenstreetmap } from "react-icons/si";
+import { TiWeatherDownpour } from "react-icons/ti";
+import { ImBlocked } from "react-icons/im";
+import { TbHours12 } from "react-icons/tb";
 import CommonTitle from "./CommonTitle";
 
 const BusinessCard = (props) => {
   const { icon, title, desc } = props;
   return (
     <>
-      <div className="flex items-center gap-2 ss:p-7 ss:gap-5 p-3 sm:p-5 feature-card rounded-2xl ss:rounded-3xl hover:bg-black-gradient cursor-pointer">
+      <div className="flex items-center gap-2 ss:p-7 ss:gap-5 p-3 sm:p-5 feature-card rounded-2xl ss:rounded-3xl hover:bg-black-gradient">
         <div className="p-4 bg-dimBlue rounded-full">
           <span className="text-2xl ss:text-[2rem]">{icon}</span>
         </div>
@@ -24,43 +29,39 @@ const BusinessCard = (props) => {
   );
 };
 
-const Steps = ({ title }) => {
-  return (
-    <p className="text-sm sm:text-base md:text-lg text-dimWhite flex items-center gap-2">
-      <span>
-        <FaStar className="mt-1 text-base" />
-      </span>
-      <span>{title}</span>
-    </p>
-  );
-};
-
 const Product = () => {
   return (
-    <section id="product" className="font-poppins pb-10 md:py-16">
-      <div className="flex items-center flex-col md:flex-row gap-10 md:gap-10 ss:gap-16 justify-between">
+    <section id="product" className="font-poppins pb-10 py-16">
+      <div className="flex flex-col md:flex-row gap-10 md:gap-10 ss:gap-16 justify-between">
         <div className="flex flex-col gap-8 ss:gap-12 flex-1">
           <CommonTitle title="ALAT KOMUNIKASI" />
           <p className="text-dimWhite text-base sm:text-lg">
-            Praesent sollicitudin aliquet augue sed facilisis. Sed sit amet sapien finibus, placerat tortor et, lacinia nibh. In vitae dolor eget elit placerat pharetra ut eget eros. Aliquam erat volutpat. Suspendisse pulvinar, nisl eu porta consectetur, metus mi venenatis dui, ut congue nulla tortor condimentum tortor. Maecenas vel faucibus est. Donec sed faucibus sapien. Curabitur quis consequat mauris. Nulla at massa vitae libero cursus lacinia vitae at lacus.
+            Salah satu rekayasa teknologi dari PASS engineering telah mendapatkan piagam penghargaan berupa rekor MURI di tahun 2020. 
+          </p>
+          <p className="text-dimWhite text-base sm:text-lg">
+            Rekayasa alat komunikasi yang jernih dan digitalisasi tanpa jarak dan batas. Sistem komunikasi yang menggunakan semua frekuensi di permukaan bumi. Komunikasi yang bebas dari penyadapan dan tahan terhadap kondisi dan cuaca ekstrem.
           </p>
         </div>
-
         <div className="flex flex-col gap-5 flex-1">
           <BusinessCard
-            icon={<FaStar />}
-            title="Lorem Ipsum"
-            desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris et nisi in est mollis tincidunt."
+            icon={<GiAerialSignal />}
+            title="Jernih"
           />
           <BusinessCard
-            icon={<FaStar />}
-            title="Lorem Ipsum"
-            desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris et nisi in est mollis tincidunt."
+            icon={<FaWalkieTalkie />}
+            title="Digitalisasi"
           />
           <BusinessCard
-            icon={<FaStar />}
-            title="Lorem Ipsum"
-            desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris et nisi in est mollis tincidunt."
+            icon={<SiOpenstreetmap />}
+            title="Tanpa Jarak dan Batas"
+          />
+          <BusinessCard
+            icon={<TiWeatherDownpour />}
+            title="Cuaca Ekstrim"
+          />
+          <BusinessCard
+            icon={<ImBlocked />}
+            title="Anti Sadap"
           />
         </div>
       </div>
@@ -74,9 +75,8 @@ const Product = () => {
             allowfullscreen
           ></iframe>
       </div>
-
-      <div className="flex flex-col md:flex-row pb-10 gap-10 md:gap-5">
-        <div className="flex-1">
+      <div className="flex items-center flex-col md:flex-row pb-10 gap-10 md:gap-5">
+        <div className="flex-1 justify-between">
           <img src={fwh} alt="FUEL WATER HYBRID" />
           <img src={hidrogen} alt="HIDROGENPASTA" />
           <img src={hidrofit} alt="hidrofit" />
@@ -84,23 +84,33 @@ const Product = () => {
         <div className="flex flex-col gap-5 md:gap-10 flex-1">
           <CommonTitle title="HIDROGEN" />
           <p className="text-dimWhite leading-relaxed text-base ss:text-lg">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tempus, eros eu ultricies viverra, massa sapien varius sem, vel efficitur nisi sapien id sapien. Nullam facilisis nunc eu diam ultricies interdum. Nulla laoreet eros nec urna porta, eget pulvinar mauris venenatis. Donec ullamcorper cursus gravida. 
+            <strong>FUEL WATER HYBRID</strong> merupakan alat yang mengefisiensikan pemakaian bahan bakar kendaraan bensin maupun solar menjadi berbasis hidrogen, sehingga manfaat yang didapat adalah kendaraan berperformance lebih meningkat, efisiensi bahan bakar, dan jaminan lulus uji emisi gas buang dengan oktan 130.
+          </p>
+          <p className="text-dimWhite leading-relaxed text-base ss:text-lg">
+            <strong>HIDROGENPASTA</strong> merupakan rekayasa teknologi yang berbasis hidrogen untuk menekan pemakaian beban rekening pembayaran listrik industri dengan satuan panel RST dan berbasis manajemen distribusi panel (MDP).
+          </p>
+          <p className="text-dimWhite leading-relaxed text-base ss:text-lg">
+            <strong>hidrofit</strong> merupakan alat hidrogen untuk kesehatan. Dengan alat ini, hidrogen yang diminum menjadi anti oksidan terbaik dapat menyembuhkan 170 penyakit. Hal ini telah diurai oleh para dokter dan dukungan jurnal kedokteran seluruh dunia.
           </p>
         </div>
       </div>
-      {/* <div className="absolute w-[20%] h-[60%] rounded-full left-0 top-20 pink__gradient"></div> */}
-      <div className="flex md:flex-row flex-col gap-10">
-        <div className="flex flex-col gap-7 sm:gap-10 flex-1">
+      <div className="absolute w-[20%] h-[60%] rounded-full left-0 top-20 blues__gradient"></div>
+      <div className="flex flex-col md:flex-row gap-10 md:gap-10 ss:gap-16 justify-between">
+        <div className="flex flex-col gap-8 ss:gap-12 flex-1">
           <CommonTitle title="Mesin Pompa Banjir" />
-          <div className="flex flex-col gap-3">
-            <Steps title="Integer lacinia eu nibh vehicula placerat" />
-            <Steps title="Integer lacinia eu nibh vehicula placerat" />
-            <Steps title="Integer lacinia eu nibh vehicula placerat" />
-          </div>
-          {/* <CommonButton btnText="get started" /> */}
+          <p className="text-dimWhite leading-relaxed text-base ss:text-lg">
+            Sebuah alat sebagai solusi mengatasi genangan banjir dapat surut dalam waktu relatif singkat. Air akan tersedot secara estafet dan menuju laut. Mesin ini mampu memompa air dengan skala besar.
+          </p>
+          <BusinessCard
+            icon={<TbHours12 />}
+            title="Dalam waktu singkat"
+          />
+          <BusinessCard
+            icon={<FaArrowUpFromWaterPump />}
+            title="Air skala besar"
+          />
         </div>
-
-        <div className="flex-1">
+        <div className="flex flex-col gap-5 flex-1">
           <img
             src={mesin}
             alt="Mesin Pompa"

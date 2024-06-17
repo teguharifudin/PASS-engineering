@@ -22,27 +22,22 @@ export const footerLinks = [
         link: "https://www.merahputihcyber.com/",
       },
       {
-        name: "Budidaya Ulat Jerman",
-        link: "https://www.ulatjerman.id/",
-      },
-      {
         name: "Hidrogen",
         link: "https://hidrogen.id/",
       },
-    ],
-  },
-  {
-    title: "Community",
-    links: [
       {
-        name: "Rudy Sumardi",
-        link: "https://rudysumardi.com/",
+        name: "Budidaya Ulat Jerman",
+        link: "https://www.ulatjerman.id/",
       },
     ],
   },
   {
     title: "Partner",
     links: [
+      {
+        name: "Rudy Sumardi",
+        link: "https://rudysumardi.com/",
+      },
       {
         name: "Teguh Arief",
         link: "https://www.teguharief.com/",

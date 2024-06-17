@@ -19,9 +19,9 @@ const Footer = () => {
   return (
     <section id="contact" className="relative font-poppins pb-10 sm:pb-16">
       <div className="flex items-start md:flex-row flex-col gap-10 md:gap-24">
-        <div className="md:max-w-[370px]">
+        <div className="md:max-w-[600px]">
           <p className="text-dimWhite leading-relaxed text-base ss:text-lg mt-5">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tempus, eros eu ultricies viverra, massa sapien varius sem, vel efficitur nisi sapien id sapien. 
+            PASS engineering berkarya untuk bangsa dengan produk alat komunikasi, hidrogen, mesin pompa, dan sebagainya.
           </p>
         </div>
         <div className="w-full md:flex-1 flex items-start ss:justify-between gap-10 ss:gap-5 ss:flex-nowrap flex-wrap">
@@ -31,7 +31,7 @@ const Footer = () => {
               <ul className="flex flex-col gap-3 xs:gap-5 text-dimWhite mt-5">
                 {item.links.map((link, index) => (
                   <a key={index} href={link.link} target="">
-                    <li className="text-[.9rem] font-[500] hover:text-secondary">
+                    <li className="text-[.9rem] font-[500] link-footer">
                       {link.name}
                     </li>
                   </a>
@@ -41,7 +41,6 @@ const Footer = () => {
           ))}
         </div>
       </div>
-
       <div className="flex items-center justify-between md:flex-row flex-col gap-5 pt-10 mt-10 sm:mt-16 border-t">
         <p className="md:text-base xs:text-sm text-xs">
           Copyright Ⓒ {date} All Rights Reserved.
