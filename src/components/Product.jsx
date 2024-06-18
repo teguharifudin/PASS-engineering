@@ -97,7 +97,7 @@ const Product = () => {
       <div className="absolute w-[20%] h-[60%] rounded-full left-0 top-20 blues__gradient"></div>
       <div className="flex flex-col md:flex-row gap-10 md:gap-10 ss:gap-16 justify-between">
         <div className="flex flex-col gap-8 ss:gap-12 flex-1">
-          <CommonTitle title="Mesin Pompa Banjir" />
+          <CommonTitle title="MESIN POMPA BANJIR" />
           <p className="text-dimWhite leading-relaxed text-base ss:text-lg">
             Sebuah alat sebagai solusi mengatasi genangan banjir dapat surut dalam waktu relatif singkat. Air akan tersedot secara estafet dan menuju laut. Mesin ini mampu memompa air dengan skala besar.
           </p>
